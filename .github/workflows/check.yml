@@ -1,8 +1,8 @@
-name: Pull Request Checker
+name: Evelyn Request Checker
 
 on:
     pull_request:
-        branches:
+        branches:EvelynT2024/Bang-Co
             - main
         paths-ignore:
             - "**/*.md"
@@ -13,13 +13,13 @@ jobs:
 
         steps:
             - name: Checkout
-              uses: actions/checkout@v3
+              uses: EvelynT2024
 
             - name: Setup PNPM
               uses: pnpm/action-setup@v2.2.2
               with:
                   version: latest
-                  run_install: true
+                
 
             - name: Lint
               uses: DoozyX/clang-format-lint-action@v0.13
